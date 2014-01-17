@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component xmlns="http://www.osgi.org/xmlns/scr/v1.1.0"
+	activate="activate" deactivate="deactivate">
+	<implementation class="com.liming.platform.admin.vaadin.MyServlet" />
+
+	<!--<property name="contextPath" value="/VAADIN" />-->
+
+	<reference interface="org.osgi.service.http.HttpService" bind="setHttpService" />
+
+</component>
