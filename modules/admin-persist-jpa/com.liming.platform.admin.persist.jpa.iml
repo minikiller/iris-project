@@ -4,6 +4,7 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.platform.admin.persist.openjpa-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.platform.admin.persist.openjpa" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Bundle-Description" value="Iris Admin Persist JPA Container Managed Module" />
           <property key="Export-Package" value="!com.liming.platform.admin.persist.openjpa.internal.*,com.liming.platform.admin.persist.openjpa.*;version=&quot;1.0-SNAPSHOT&quot;" />
           <property key="Private-Package" value="com.liming.platform.admin.persist.openjpa.internal.*" />
           <property key="-include" value="-osgi.bnd" />

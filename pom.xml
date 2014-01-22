@@ -59,6 +59,9 @@
         <module>poms</module>
         <module>provision</module>
         <module>modules</module>
+        <module>platform-api</module>
+        <module>platform-core</module>
+        <!--<module>osgitemplate</module>-->
     </modules>
 
     <build>
