@@ -75,6 +75,14 @@
             <artifactId>commons-collections</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.liming.platform.core</groupId>
+            <artifactId>com.liming.platform.core.api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liming.platform.core</groupId>
+            <artifactId>com.liming.platform.core.impl</artifactId>
+        </dependency>
         <!-- end OpenJPA PCEnhancer depends -->
     </dependencies>
     <build>

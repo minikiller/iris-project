@@ -4,6 +4,7 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.platform.admin.datasource-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.platform.admin.datasource" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Bundle-Description" value="Iris Admin DataSource" />
           <property key="Export-Package" value="!com.liming.platform.admin.api.internal.*,com.liming.platform.admin.api.*;version=&quot;1.0-SNAPSHOT&quot;" />
           <property key="Private-Package" value="com.liming.platform.admin.api.internal.*" />
           <property key="-include" value="-osgi.bnd" />
@@ -27,6 +28,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.derby:derby:10.8.2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>
 

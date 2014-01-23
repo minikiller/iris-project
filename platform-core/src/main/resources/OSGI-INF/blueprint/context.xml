@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+<blueprint
+        xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0"
+        xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0">
 
 <!--	<command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">-->
 <!--		<command name="test/hello">-->
@@ -24,8 +28,12 @@
 <!--			<entry key="osgi.command.function" value="register" />-->
 <!--		</service-properties>-->
 <!--	</service>-->
+    <!--<bean id="persistEntityService" class="com.liming.platform.core.impl.persistence.PersistEntityServiceImpl">
+        <jpa:context property="entityManager" unitname="core-cm" />
+    </bean>
 
-	<service>
+    <service id="persistEntityServiceImpl" ref="persistEntityService" interface="com.liming.platform.core.api.persistence.PersistEntityService" />
+	--><!--<service>
 		<interfaces>
 			<value>javax.servlet.http.HttpServlet</value>
 		</interfaces>
@@ -34,5 +42,5 @@
 		</service-properties>
 		<bean class="com.liming.platform.template.SimpleServlet">
 		</bean>
-	</service>
+	</service>-->
 </blueprint>

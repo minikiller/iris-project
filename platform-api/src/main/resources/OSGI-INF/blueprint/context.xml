@@ -25,7 +25,7 @@
 <!--		</service-properties>-->
 <!--	</service>-->
 
-	<service>
+	<!--<service>
 		<interfaces>
 			<value>javax.servlet.http.HttpServlet</value>
 		</interfaces>
@@ -34,5 +34,5 @@
 		</service-properties>
 		<bean class="com.liming.platform.template.SimpleServlet">
 		</bean>
-	</service>
+	</service>-->
 </blueprint>

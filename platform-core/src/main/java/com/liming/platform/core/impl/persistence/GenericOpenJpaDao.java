@@ -1,12 +1,14 @@
-package com.liming.platform.admin.persist.openjpa;
+package com.liming.platform.core.impl.persistence;
 
-import com.liming.platform.admin.api.dao.SearchException;
+
+import com.liming.platform.core.api.exception.SearchException;
+import com.liming.platform.core.api.persistence.GenericDao;
+import com.liming.platform.core.api.persistence.PersistentEntityBean;
 import org.apache.log4j.Logger;
+
+
 import javax.persistence.EntityManager;
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+import javax.persistence.Query;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
@@ -14,35 +16,34 @@ import java.util.Map;
 /**
  * Created by dell on 14-1-16.
  */
-public class GenericDao<T, PK extends Serializable> implements com.liming.platform.admin.api.dao.GenericDao<T, PK> {
+public class GenericOpenJpaDao<T extends PersistentEntityBean, PK extends Serializable> implements GenericDao<T, PK> {
     protected final Logger log = Logger.getLogger(getClass());
     private Class<T> persistentClass;
-    private EntityManager entityManager;
+    protected EntityManager entityManager;
 
-    public void setEntityManager (EntityManager em) {
+    public void setEntityManager(EntityManager em) {
         entityManager = em;
     }
 
-    public GenericDao(){}
+    public GenericOpenJpaDao() {
+    }
+
     /**
      * Constructor that takes in a class to see which type of entity to persist.
      * Use this constructor when subclassing.
      *
      * @param persistentClass the class type you'd like to persist
      */
-    public GenericDao(final Class<T> persistentClass) {
+    public GenericOpenJpaDao(final Class<T> persistentClass) {
         this.persistentClass = persistentClass;
     }
 
     @Override
-    public List<T> getAll() {
-        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-        CriteriaQuery<T> cq = cb.createQuery(persistentClass);
-        Root<T> rootEntry = cq.from(persistentClass);
-        CriteriaQuery<T> all = cq.select(rootEntry);
-        TypedQuery<T> allQuery = entityManager.createQuery(all);
-        return allQuery.getResultList();
-   }
+    public List<T> getAll(String className) {
+        final Query query = entityManager.createQuery("select c from " + className + " c ");
+        final List<T> resultList = query.getResultList();
+        return resultList;
+    }
 
     @Override
     public List<T> getAllDistinct() {
@@ -56,7 +57,7 @@ public class GenericDao<T, PK extends Serializable> implements com.liming.platfo
 
     @Override
     public T get(PK id) {
-        return entityManager.find(persistentClass,id);
+        return entityManager.find(persistentClass, id);
     }
 
     @Override
@@ -79,7 +80,7 @@ public class GenericDao<T, PK extends Serializable> implements com.liming.platfo
 
     @Override
     public void remove(PK id) {
-        Object object=entityManager.find(persistentClass,id);
+        Object object = entityManager.find(persistentClass, id);
         entityManager.remove(object);
         entityManager.flush();
     }

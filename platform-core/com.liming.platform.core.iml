@@ -2,14 +2,14 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.platform.core-1.0.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.platform.core" bundleVersion="1.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.platform.core.impl-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.platform.core.impl" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Description" value="Plateform Core" />
-          <property key="Export-Package" value="!com.liming.platform.core.internal.*,com.liming.platform.core.*;version=&quot;1.0&quot;" />
-          <property key="Private-Package" value="com.liming.platform.core.internal.*" />
+          <property key="Export-Package" value="!com.liming.platform.core.impl.internal.*,com.liming.platform.core.impl.*;version=&quot;1.0-SNAPSHOT&quot;" />
+          <property key="Private-Package" value="com.liming.platform.core.impl.internal.*" />
           <property key="-include" value="-osgi.bnd" />
           <property key="Bundle-Name" value="Iris :: Platform - Core" />
-          <property key="Include-Resource" value="OSGI-INF/blueprint/context.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/context.xml" />
+          <property key="Include-Resource" value="META-INF/persistence.xml=$MODULE_DIR$/src/main/resources/META-INF/persistence.xml,OSGI-INF/blueprint/context.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/context.xml" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -31,7 +31,20 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.compendium:4.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
+    <orderEntry type="module" module-name="com.liming.platform.api" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.openjpa:openjpa:2.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sourceforge.serp:serp:1.13.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.xbean:xbean-asm4-shaded:3.14" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>
 

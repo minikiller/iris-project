@@ -25,7 +25,7 @@
         <module>admin-entities</module>
         <module>admin-persist-jpa</module>
         <module>admin-core</module>
-        <module>admin-vaadin</module>
+        <!--<module>admin-vaadin</module>-->
         <module>karaf-features</module>
     </modules>
     <dependencyManagement>

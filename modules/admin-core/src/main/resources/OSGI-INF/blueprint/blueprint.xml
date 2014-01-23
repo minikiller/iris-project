@@ -21,7 +21,7 @@
             xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <bean id="userBeanServiceImpl" class="com.liming.platform.admin.core.UserBeanServiceImpl">
+  <bean id="userBeanServiceImpl" class="com.liming.platform.admin.core.UserBeanServiceImpl" init-method="init">
       <property name="userBeanDao" ref="userBeanDao"/>
   </bean>
 

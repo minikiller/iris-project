@@ -3,10 +3,9 @@ package com.liming.platform.admin.api.persistence;
 /**
  * Created by dell on 14-1-16.
  */
-public interface UserBean {
-    Long getId();
+import com.liming.platform.core.api.persistence.PersistentEntityBean;
 
-    void setId(Long id);
+public interface UserBean extends PersistentEntityBean {
 
     String getName();
 

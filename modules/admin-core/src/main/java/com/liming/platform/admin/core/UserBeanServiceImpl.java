@@ -18,20 +18,20 @@ public class UserBeanServiceImpl implements UserBeanService{
     }
 
     public void init(){
-
         UserBean user =new UserBeanImpl();
         user.setName("test");
         user.setPassword("hello");
-        addUser(user);
-//        List<UserBean> list=userBeanDao.getUserList();
-        System.out.print("system is called ");
+        user=addUser(user);
+        List<UserBean> list=this.getAllUser();
+        System.out.print("system is called "+list.size());
     }
     @Override
-    public void addUser(UserBean user) {
-        userBeanDao.save(user);
+
+    public UserBean addUser(UserBean user) {
+        return userBeanDao.saveUser(user);
     }
 
     public List<UserBean> getAllUser(){
-        return userBeanDao.getAll();
+        return userBeanDao.getAll(UserBeanImpl.class.getName());
     }
 }

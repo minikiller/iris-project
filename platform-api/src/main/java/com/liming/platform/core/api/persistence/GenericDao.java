@@ -1,4 +1,6 @@
-package com.liming.platform.admin.api.dao;
+package com.liming.platform.core.api.persistence;
+
+import com.liming.platform.core.api.exception.SearchException;
 
 import java.io.Serializable;
 import java.util.List;
@@ -13,7 +15,7 @@ public interface GenericDao <T, PK extends Serializable>{
      * is the same as lookup up all rows in a table.
      * @return List of populated objects
      */
-    List<T> getAll();
+    List<T> getAll(String className);
 
     /**
      * Gets all records without duplicates.
@@ -77,7 +79,7 @@ public interface GenericDao <T, PK extends Serializable>{
     List<T> findByNamedQuery(String queryName, Map<String, Object> queryParams);
 
     /**
-     * Generic method to regenerate full text index of the persistent class T
+     * Generic method to regenerate full text index of the persistence class T
      */
     void reindex();
 

@@ -6,7 +6,6 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="admin-am" />
           <factory-entry name="admin-cm" />
           <factory-entry name="ariestrader-am" />
           <factory-entry name="ariestrader-cm" />
@@ -17,6 +16,7 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.platform.admin.entities-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.platform.admin.entities" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Bundle-Description" value="Iris Admin JPA Enhanced Entities Module" />
           <property key="Export-Package" value="!com.liming.platform.admin.entities.internal.*,com.liming.platform.admin.entities.*;version=&quot;1.0-SNAPSHOT&quot;" />
           <property key="Private-Package" value="com.liming.platform.admin.entities.internal.*" />
           <property key="-include" value="-osgi.bnd" />
@@ -52,6 +52,11 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.xbean:xbean-asm4-shaded:3.14" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="module" module-name="com.liming.platform.api" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
+    <orderEntry type="module" module-name="com.liming.platform.core" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>
 

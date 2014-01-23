@@ -1,4 +1,4 @@
-package com.liming.platform.admin.api.dao;
+package com.liming.platform.core.api.exception;
 
 /**
  *

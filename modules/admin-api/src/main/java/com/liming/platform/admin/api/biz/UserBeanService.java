@@ -8,6 +8,6 @@ import java.util.List;
  * Created by dell on 14-1-17.
  */
 public interface UserBeanService {
-    public void addUser(UserBean user);
+    public UserBean addUser(UserBean user);
     public List<UserBean> getAllUser();
 }

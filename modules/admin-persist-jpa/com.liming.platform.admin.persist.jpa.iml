@@ -30,6 +30,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="com.liming.platform.admin.api" scope="PROVIDED" />
     <orderEntry type="module" module-name="com.liming.platform.admin.entities" scope="PROVIDED" />
+    <orderEntry type="module" module-name="com.liming.platform.api" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
+    <orderEntry type="module" module-name="com.liming.platform.core" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.openjpa:openjpa:2.3.0" level="project" />

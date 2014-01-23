@@ -1,13 +1,15 @@
 package com.liming.platform.admin.api.dao;
 
 import com.liming.platform.admin.api.persistence.UserBean;
+import com.liming.platform.core.api.persistence.GenericDao;
 
 import java.util.List;
 
 /**
  * Created by dell on 14-1-16.
  */
-public interface UserBeanDao extends GenericDao<UserBean, Long>{
+//public interface UserBeanDao {
+    public interface UserBeanDao extends GenericDao<UserBean, Long> {
     /**
      * Gets a list of users ordered by the uppercase version of their username.
      *
