@@ -9,15 +9,15 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <properties>
-        <bundle.symbolicName>com.liming.platform.admin.api</bundle.symbolicName>
-        <bundle.namespace>com.liming.platform.admin.api</bundle.namespace>
-    </properties>
-
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.liming.platform.admin</groupId>
-    <artifactId>com.liming.platform.admin.api</artifactId>
+    <groupId>com.liming.admin</groupId>
+    <artifactId>com.liming.admin.api</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <bundle.symbolicName>com.liming.admin.api</bundle.symbolicName>
+        <bundle.namespace>${bundle.symbolicName}</bundle.namespace>
+    </properties>
 
     <name>Iris :: Admin - API</name>
     <description>Admin API</description>
@@ -43,8 +43,8 @@
             <artifactId>org.osgi.compendium</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.core</groupId>
-            <artifactId>com.liming.platform.core.api</artifactId>
+            <groupId>com.liming.core</groupId>
+            <artifactId>com.liming.core.api</artifactId>
         </dependency>
     </dependencies>
     <build>

@@ -16,7 +16,8 @@
     limitations under the License.
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <relativePath>../../poms/compiled/</relativePath>
@@ -25,34 +26,34 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.liming.platform.admin</groupId>
-    <artifactId>com.liming.platform.admin.persist.openjpa</artifactId>
+    <groupId>com.liming.admin</groupId>
+    <artifactId>com.liming.admin.persist.openjpa</artifactId>
     <packaging>bundle</packaging>
     <name>Iris :: Admin - Persist JPA Container Managed</name>
     <description>Iris Admin Persist JPA Container Managed Module</description>
 
     <properties>
-        <bundle.symbolicName>com.liming.platform.admin.persist.openjpa</bundle.symbolicName>
-        <bundle.namespace>com.liming.platform.admin.persist.openjpa</bundle.namespace>
+        <bundle.symbolicName>com.liming.admin.persist.openjpa</bundle.symbolicName>
+        <bundle.namespace>${bundle.symbolicName}</bundle.namespace>
     </properties>
 
     <dependencies>
 
         <dependency>
-            <groupId>com.liming.platform.admin</groupId>
-            <artifactId>com.liming.platform.admin.api</artifactId>
+            <groupId>com.liming.admin</groupId>
+            <artifactId>com.liming.admin.api</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.admin</groupId>
-            <artifactId>com.liming.platform.admin.entities</artifactId>
+            <groupId>com.liming.admin</groupId>
+            <artifactId>com.liming.admin.entities</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.core</groupId>
-            <artifactId>com.liming.platform.core.api</artifactId>
+            <groupId>com.liming.core</groupId>
+            <artifactId>com.liming.core.api</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.core</groupId>
-            <artifactId>com.liming.platform.core.impl</artifactId>
+            <groupId>com.liming.core</groupId>
+            <artifactId>com.liming.core.impl</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>

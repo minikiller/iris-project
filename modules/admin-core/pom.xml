@@ -26,40 +26,40 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.liming.platform.admin</groupId>
-    <artifactId>com.liming.platform.admin.core</artifactId>
+    <groupId>com.liming.admin</groupId>
+    <artifactId>com.liming.admin.core</artifactId>
     <packaging>bundle</packaging>
     <name>Iris :: Admin - Core</name>
     <description>Iris Admin Core Module</description>
 
     <properties>
-        <bundle.symbolicName>com.liming.platform.admin.core</bundle.symbolicName>
-        <bundle.namespace>com.liming.platform.admin.core</bundle.namespace>
+        <bundle.symbolicName>com.liming.admin.core</bundle.symbolicName>
+        <bundle.namespace>${bundle.symbolicName}</bundle.namespace>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.liming.platform.admin</groupId>
-            <artifactId>com.liming.platform.admin.api</artifactId>
+            <groupId>com.liming.admin</groupId>
+            <artifactId>com.liming.admin.api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.admin</groupId>
-            <artifactId>com.liming.platform.admin.persist.jpa</artifactId>
+            <groupId>com.liming.admin</groupId>
+            <artifactId>com.liming.admin.persist.openjpa</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.admin</groupId>
-            <artifactId>com.liming.platform.admin.entities</artifactId>
+            <groupId>com.liming.admin</groupId>
+            <artifactId>com.liming.admin.entities</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.core</groupId>
-            <artifactId>com.liming.platform.core.api</artifactId>
+            <groupId>com.liming.core</groupId>
+            <artifactId>com.liming.core.api</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liming.platform.core</groupId>
-            <artifactId>com.liming.platform.core.impl</artifactId>
+            <groupId>com.liming.core</groupId>
+            <artifactId>com.liming.core.impl</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.openjpa</groupId>

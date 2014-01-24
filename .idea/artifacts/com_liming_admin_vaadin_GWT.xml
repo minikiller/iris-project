@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="com.liming.admin.vaadin:GWT">
+    <output-path>$PROJECT_DIR$/modules/admin-vaadin/src/main/webapp/VAADIN/widgetsets</output-path>
+    <root id="root">
+      <element id="directory" name="VAADIN">
+        <element id="directory" name="widgetsets">
+          <element id="gwt-compiler-output" facet="com.liming.admin.vaadin/gwt/GWT" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

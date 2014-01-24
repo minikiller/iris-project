@@ -18,22 +18,22 @@
 
 -->
 <blueprint
-            xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+        >
 
-  <bean id="userBeanServiceImpl" class="com.liming.platform.admin.core.UserBeanServiceImpl" init-method="init">
-      <property name="userBeanDao" ref="userBeanDao"/>
-  </bean>
+    <bean id="userBeanServiceImpl" class="com.liming.admin.core.UserBeanServiceImpl" init-method="init">
+        <property name="userBeanDao" ref="userBeanDao"/>
+    </bean>
 
-  <service id="userBeanService" ref="userBeanServiceImpl" interface="com.liming.platform.admin.api.biz.UserBeanService"/>
-  <reference id="userBeanDao" interface="com.liming.platform.admin.api.dao.UserBeanDao"/>
-  <!--<reference id="userbean" interface="com.liming.platform.admin.api.biz.UserBeanService" />
-  <bean id="UserTest" class="com.liming.platform.admin.core.test.TestBean" init-method="init">
-      <property name="userBeanService" ref="userbean"  />
-          </bean>-->
-  <!--<reference-list id="tradeServicesList" availability="optional" activation="eager" interface="org.apache.aries.samples.ariestrader.api.TradeServices">
-      <reference-listener ref="tradeServicesManagerBean" bind-method="bindService" unbind-method="unbindService" />
-  </reference-list>-->
+    <service id="userBeanService" ref="userBeanServiceImpl" interface="com.liming.admin.api.biz.UserBeanService"/>
+    <reference id="userBeanDao" interface="com.liming.admin.api.dao.UserBeanDao"/>
+    <!--<reference id="userbean" interface="com.liming.admin.api.biz.UserBeanService" />
+    <bean id="UserTest" class="com.liming.admin.core.test.TestBean" init-method="init">
+        <property name="userBeanService" ref="userbean"  />
+            </bean>-->
+    <!--<reference-list id="tradeServicesList" availability="optional" activation="eager" interface="org.apache.aries.samples.ariestrader.api.TradeServices">
+        <reference-listener ref="tradeServicesManagerBean" bind-method="bindService" unbind-method="unbindService" />
+    </reference-list>-->
 
 
 </blueprint>

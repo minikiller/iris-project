@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>modules</artifactId>
 
-    <name>Iris :: Admin - Modules</name>
+    <name>Iris :: Modules - Admin</name>
 
     <packaging>pom</packaging>
     <version>1.0</version>
@@ -21,12 +21,10 @@
     </properties>
     <modules>
         <module>admin-api</module>
-        <module>admin-datasource</module>
         <module>admin-entities</module>
         <module>admin-persist-jpa</module>
         <module>admin-core</module>
-        <!--<module>admin-vaadin</module>-->
-        <module>karaf-features</module>
+        <module>admin-webapp-vaadin</module>
     </modules>
     <dependencyManagement>
         <dependencies>

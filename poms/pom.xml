@@ -95,6 +95,7 @@
                 <scope>provided</scope>
                 <optional>true</optional>
             </dependency>
+            <!--osgi standard begin-->
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.core</artifactId>
@@ -110,35 +111,47 @@
                 <optional>true</optional>
             </dependency>
             <dependency>
-                <groupId>com.liming.platform.admin</groupId>
-                <artifactId>com.liming.platform.admin.api</artifactId>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.enterprise</artifactId>
+                <version>4.2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <!--osgi standard end-->
+            <!--Iris Admin Module begin-->
+            <dependency>
+                <groupId>com.liming.admin</groupId>
+                <artifactId>com.liming.admin.api</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.liming.platform.admin</groupId>
-                <artifactId>com.liming.platform.admin.persist.jpa</artifactId>
+                <groupId>com.liming.admin</groupId>
+                <artifactId>com.liming.admin.persist.openjpa</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.liming.platform.admin</groupId>
-                <artifactId>com.liming.platform.admin.entities</artifactId>
+                <groupId>com.liming.admin</groupId>
+                <artifactId>com.liming.admin.entities</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!--Iris Admin Module begin-->
+            <!--Iris Core begin-->
+            <dependency>
+                <groupId>com.liming.core</groupId>
+                <artifactId>com.liming.core.api</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.liming.platform.core</groupId>
-                <artifactId>com.liming.platform.core.api</artifactId>
+                <groupId>com.liming.core</groupId>
+                <artifactId>com.liming.core.impl</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
-                <groupId>com.liming.platform.core</groupId>
-                <artifactId>com.liming.platform.core.impl</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
+            <!--Iris Core end-->
+            <!--openjpa begin-->
             <dependency>
                 <groupId>org.apache.derby</groupId>
                 <artifactId>derby</artifactId>
@@ -187,20 +200,13 @@
                 <version>${serp.Version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!--openjpa end-->
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
-                <groupId>org.osgi</groupId>
-                <artifactId>org.osgi.enterprise</artifactId>
-                <version>4.2.0</version>
-                <scope>provided</scope>
-            </dependency>
-
-
         </dependencies>
     </dependencyManagement>
 
