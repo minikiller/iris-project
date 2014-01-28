@@ -22,7 +22,7 @@ package com.liming.core.api.exception;
 
 
 import com.liming.core.api.Translations;
-import com.liming.core.api.persistence.PersistentEntityBean;
+import com.liming.core.api.persistence.IPersistentEntity;
 
 /**
  * Stale entity exception occurs when entity database version is not consistent with entity version in memory
@@ -30,7 +30,7 @@ import com.liming.core.api.persistence.PersistentEntityBean;
  * @author Denis Skarbichev
  */
 public class StaleEntityException extends InternalRuntimeException {
-    public StaleEntityException(PersistentEntityBean entity) {
+    public StaleEntityException(IPersistentEntity entity) {
         super(new InternalError(Translations.STALE_OBJECT_STATE_EXCEPTION,
                 entity.getClass(),
                 entity.getVersion()));

@@ -33,14 +33,25 @@
     <description>Iris Admin Persist JPA Container Managed Module</description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bundle.symbolicName>com.liming.admin.persist.openjpa</bundle.symbolicName>
         <bundle.namespace>${bundle.symbolicName}</bundle.namespace>
+
     </properties>
 
     <dependencies>
 
         <dependency>
-            <groupId>com.liming.admin</groupId>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+        </dependency>
+
+        <dependency>
+        <groupId>com.liming.admin</groupId>
             <artifactId>com.liming.admin.api</artifactId>
         </dependency>
         <dependency>
@@ -88,6 +99,32 @@
                                       todir="${karaf.path}"/>
                             </target>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--<plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.16</version>
+                <executions>
+                    <execution>
+                        <id>verify</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.servicemix.tooling</groupId>
+                <artifactId>depends-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-depends-file</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>generate-depends-file</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>

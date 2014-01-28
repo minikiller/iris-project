@@ -2,8 +2,8 @@ package com.liming.core.impl.persistence;
 
 
 import com.liming.core.api.exception.SearchException;
-import com.liming.core.api.persistence.GenericDao;
-import com.liming.core.api.persistence.PersistentEntityBean;
+import com.liming.core.api.persistence.IGenericDao;
+import com.liming.core.api.persistence.IPersistentEntity;
 import org.apache.log4j.Logger;
 
 import javax.persistence.EntityManager;
@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * Created by dell on 14-1-16.
  */
-public class GenericOpenJpaDao<T extends PersistentEntityBean, PK extends Serializable> implements GenericDao<T, PK> {
+public class GenericOpenJpaDao<T extends IPersistentEntity, PK extends Serializable> implements IGenericDao<T, PK> {
     protected final Logger log = Logger.getLogger(getClass());
     private Class<T> persistentClass;
     protected EntityManager entityManager;

@@ -42,7 +42,7 @@ public class PersistEntityServiceImpl implements PersistEntityService {
      * {@inheritDoc}
      */
     /*@Override
-    public <T extends PlatformEntity> T findPlatformEntityByKey(Class<T> aClass, String key) {
+    public <T extends BizEntity> T findPlatformEntityByKey(Class<T> aClass, String key) {
         final Query query = em.createQuery("select c from " + aClass.getName() + " c where c.key = ?1");
         query.setParameter(1, key);
         final List<Object> resultList = query.getResultList();

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/modules/admin-api/com.liming.admin.api.iml" filepath="$PROJECT_DIR$/modules/admin-api/com.liming.admin.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-core/com.liming.admin.core.iml" filepath="$PROJECT_DIR$/modules/admin-core/com.liming.admin.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-entities/com.liming.admin.entities.iml" filepath="$PROJECT_DIR$/modules/admin-entities/com.liming.admin.entities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/admin-itest/com.liming.admin.itest.iml" filepath="$PROJECT_DIR$/modules/admin-itest/com.liming.admin.itest.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-persist-jpa/com.liming.admin.persist.jpa.iml" filepath="$PROJECT_DIR$/modules/admin-persist-jpa/com.liming.admin.persist.jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-webapp-vaadin/com.liming.admin.webapp.vaadin.iml" filepath="$PROJECT_DIR$/modules/admin-webapp-vaadin/com.liming.admin.webapp.vaadin.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-api/com.liming.core.api.iml" filepath="$PROJECT_DIR$/core-api/com.liming.core.api.iml" />

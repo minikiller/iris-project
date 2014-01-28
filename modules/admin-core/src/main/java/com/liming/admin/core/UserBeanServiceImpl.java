@@ -1,8 +1,8 @@
 package com.liming.admin.core;
 
-import com.liming.admin.api.biz.UserBeanService;
-import com.liming.admin.api.dao.UserBeanDao;
-import com.liming.admin.api.persistence.UserBean;
+import com.liming.admin.api.biz.IUserBeanService;
+import com.liming.admin.api.dao.IUserBeanDao;
+import com.liming.admin.api.persistence.IUserBean;
 import com.liming.admin.entities.UserBeanImpl;
 
 import java.util.List;
@@ -10,29 +10,29 @@ import java.util.List;
 /**
  * Created by dell on 14-1-17.
  */
-public class UserBeanServiceImpl implements UserBeanService {
-    private UserBeanDao userBeanDao;
+public class UserBeanServiceImpl implements IUserBeanService {
+    private IUserBeanDao userBeanDao;
 
-    public void setUserBeanDao(UserBeanDao userBeanDao) {
+    public void setUserBeanDao(IUserBeanDao userBeanDao) {
         this.userBeanDao = userBeanDao;
     }
 
     public void init() {
-        UserBean user = new UserBeanImpl();
+        IUserBean user = new UserBeanImpl();
         user.setName("test");
         user.setPassword("hello");
         user = addUser(user);
-        List<UserBean> list = this.getAllUser();
+        List<IUserBean> list = this.getAllUser();
         System.out.print("system is called " + list.size());
     }
 
     @Override
 
-    public UserBean addUser(UserBean user) {
+    public IUserBean addUser(IUserBean user) {
         return userBeanDao.saveUser(user);
     }
 
-    public List<UserBean> getAllUser() {
+    public List<IUserBean> getAllUser() {
         return userBeanDao.getAll(UserBeanImpl.class.getName());
     }
 }

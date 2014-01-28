@@ -25,9 +25,9 @@
         <property name="userBeanDao" ref="userBeanDao"/>
     </bean>
 
-    <service id="userBeanService" ref="userBeanServiceImpl" interface="com.liming.admin.api.biz.UserBeanService"/>
-    <reference id="userBeanDao" interface="com.liming.admin.api.dao.UserBeanDao"/>
-    <!--<reference id="userbean" interface="com.liming.admin.api.biz.UserBeanService" />
+    <service id="userBeanService" ref="userBeanServiceImpl" interface="com.liming.admin.api.biz.IUserBeanService"/>
+    <reference id="userBeanDao" interface="com.liming.admin.api.dao.IUserBeanDao"/>
+    <!--<reference id="userbean" interface="com.liming.admin.api.biz.IUserBeanServicee" />
     <bean id="UserTest" class="com.liming.admin.core.test.TestBean" init-method="init">
         <property name="userBeanService" ref="userbean"  />
             </bean>-->

@@ -13,7 +13,7 @@
         <!--<property name="persistEntityService" ref="persistEntityService" />-->
     </bean>
 
-    <service id="userBeanDao" ref="userBeanDaoOpenjpa" interface="com.liming.admin.api.dao.UserBeanDao">
+    <service id="userBeanDao" ref="userBeanDaoOpenjpa" interface="com.liming.admin.api.dao.IUserBeanDao">
 
     </service>
     <!--<reference id="persistEntityService"   interface="com.liming.core.api.persistence.PersistEntityService"/>-->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core-datasource" charset="UTF-8" />
@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/modules/admin-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/admin-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/admin-entities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/admin-itest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/admin-persist-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/admin-webapp-vaadin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgitemplate" charset="UTF-8" />
@@ -17,6 +18,7 @@
     <file url="file://$PROJECT_DIR$/poms/compiled" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/poms/wrappers" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provision" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
 

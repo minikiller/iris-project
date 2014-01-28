@@ -1,7 +1,7 @@
 package com.liming.admin.persist.openjpa;
 
-import com.liming.admin.api.dao.UserBeanDao;
-import com.liming.admin.api.persistence.UserBean;
+import com.liming.admin.api.dao.IUserBeanDao;
+import com.liming.admin.api.persistence.IUserBean;
 import com.liming.core.impl.persistence.GenericOpenJpaDao;
 
 import java.util.List;
@@ -9,17 +9,7 @@ import java.util.List;
 /**
  * Created by dell on 14-1-16.
  */
-//public class UserBeanDaoOpenjpa  implements UserBeanDao {
-public class UserBeanDaoOpenjpa extends GenericOpenJpaDao<UserBean, Long> implements UserBeanDao {
-//    private PersistEntityService persistEntityService;
-    /*private EntityManager entityManager;
-
-    public void setEntityManager (EntityManager em) {
-        entityManager = em;
-    }*/
-    /*public void setPersistEntityService(PersistEntityService persistEntityService) {
-        this.persistEntityService = persistEntityService;
-    }*/
+public class UserBeanDaoOpenjpa extends GenericOpenJpaDao<IUserBean, Long> implements IUserBeanDao {
 
     /**
      * Constructor that sets the entity to User.class.
@@ -29,12 +19,17 @@ public class UserBeanDaoOpenjpa extends GenericOpenJpaDao<UserBean, Long> implem
     }
 
     @Override
-    public List<UserBean> getUserList() {
+    public List<IUserBean> getUserList() {
         return null;
     }
 
     @Override
-    public UserBean saveUser(UserBean user) {
+    public IUserBean saveUser(IUserBean user) {
         return super.save(user);
+    }
+
+    @Override
+    public void removeUser(Long userId) {
+        super.remove(userId);
     }
 }

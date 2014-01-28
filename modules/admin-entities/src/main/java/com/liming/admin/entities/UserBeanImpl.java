@@ -1,6 +1,6 @@
 package com.liming.admin.entities;
 
-import com.liming.admin.api.persistence.UserBean;
+import com.liming.admin.api.persistence.IUserBean;
 import com.liming.core.impl.persistence.PersistentEntity;
 
 import javax.persistence.Entity;
@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Table(name = "app_user")
 @Inheritance(strategy = InheritanceType.JOINED)
 
-public class UserBeanImpl extends PersistentEntity implements UserBean {
+public class UserBeanImpl extends PersistentEntity implements IUserBean {
 
     private String name;
     private String password;

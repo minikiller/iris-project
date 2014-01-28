@@ -1,7 +1,7 @@
 package com.liming.core.impl.persistence;
 
 import com.liming.core.api.exception.StaleEntityException;
-import com.liming.core.api.persistence.PersistentEntityBean;
+import com.liming.core.api.persistence.IPersistentEntity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,7 +14,7 @@ import java.util.Date;
  * @author Aliaksei Papou
  */
 @MappedSuperclass
-public abstract class PersistentEntity implements PersistentEntityBean {
+public abstract class PersistentEntity implements IPersistentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

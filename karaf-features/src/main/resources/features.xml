@@ -34,16 +34,17 @@
         <bundle>mvn:org.apache.openjpa/openjpa/2.3.0</bundle>
     </feature>
     <feature name="iris-core" version="1.0">
-        <bundle>mvn:com.liming.core/com.liming.core.api/${project.version}</bundle>
-        <bundle>mvn:com.liming.core/com.liming.core.impl/${project.version}</bundle>
-        <bundle>mvn:com.liming.core/com.liming.core.datasource/${project.version}</bundle>
+        <bundle>mvn:com.liming.core/com.liming.core.api/${parent.version}</bundle>
+        <bundle>mvn:com.liming.core/com.liming.core.impl/${parent.version}</bundle>
+        <bundle>mvn:com.liming.core/com.liming.core.datasource/${parent.version}</bundle>
     </feature>
     <feature name="iris-admin" version="1.0">
         <feature>iris-core</feature>
-        <bundle>mvn:com.liming.admin/com.liming.admin.api/${project.version}</bundle>
-        <bundle>mvn:com.liming.admin/com.liming.admin.core/${project.version}</bundle>
-        <bundle>mvn:com.liming.admin/com.liming.admin.entities/${project.version}</bundle>
-        <bundle>mvn:com.liming.admin/com.liming.admin.persist.jpa/${project.version}</bundle>
+        <bundle>mvn:com.liming.admin/com.liming.admin.api/${parent.version}</bundle>
+        <bundle>mvn:com.liming.admin/com.liming.admin.core/${parent.version}</bundle>
+        <bundle>mvn:com.liming.admin/com.liming.admin.entities/${parent.version}</bundle>
+        <bundle>mvn:com.liming.admin/com.liming.admin.persist.openjpa/${parent.version}</bundle>
+        <!--<bundle>mvn:com.liming.admin/com.liming.admin.webapp.vaadin/${parent.version}</bundle>-->
         <!--<bundle>mvn:com.liming.admin/com.liming.admin.datasource/${project.version}</bundle>-->
     </feature>
     <feature name="vaadin" version="7.1.9">

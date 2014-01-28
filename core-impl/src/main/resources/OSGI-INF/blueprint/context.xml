@@ -41,4 +41,7 @@
 		<bean class="com.liming.platform.template.SimpleServlet">
 		</bean>
 	</service>-->
+    <!--系统提供的服务-->
+    <bean id="jndiService" class="com.liming.core.impl.system.JndiService"/>
+    <service id="sys_jndiService" interface="com.liming.core.api.system.IJndiService" ref="jndiService"/>
 </blueprint>
