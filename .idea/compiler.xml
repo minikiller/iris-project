@@ -29,6 +29,7 @@
         <module name="com.liming.admin.entities" />
         <module name="com.liming.admin.persist.jpa" />
         <module name="com.liming.admin.webapp.vaadin" />
+        <module name="com.liming.admin.webapp.wicket" />
         <module name="com.liming.core.api" />
         <module name="com.liming.core.datasource" />
         <module name="com.liming.core.impl" />
@@ -52,6 +53,7 @@
       <module name="com.liming.admin.persist.jpa" target="1.6" />
       <module name="com.liming.admin.vaadin" target="1.7" />
       <module name="com.liming.admin.webapp.vaadin" target="1.6" />
+      <module name="com.liming.admin.webapp.wicket" target="1.6" />
       <module name="com.liming.core.api" target="1.6" />
       <module name="com.liming.core.datasource" target="1.6" />
       <module name="com.liming.core.impl" target="1.6" />

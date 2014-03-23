@@ -4,11 +4,12 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.core.web.wicket-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.core.web.wicket" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Bundle-Description" value="Core - Web Wicket" />
           <property key="Export-Package" value="!com.liming.core.web.wicket.internal.*,com.liming.core.web.wicket.*;version=&quot;1.0-SNAPSHOT&quot;" />
           <property key="Private-Package" value="com.liming.core.web.wicket.internal.*" />
           <property key="-include" value="-osgi.bnd" />
-          <property key="Bundle-Name" value="Iris :: Core - Web Wicket" />
-          <property key="Include-Resource" value="com/liming/core/web/wicket/HomePage.html=$MODULE_DIR$/src/main/resources/com/liming/core/web/wicket/HomePage.html,OSGI-INF/blueprint/context.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/context.xml" />
+          <property key="Bundle-Name" value="Iris :: Core - Web Wicket Implement" />
+          <property key="Include-Resource" value="com/liming/core/web/wicket/border/NavomaticBorder.html=$MODULE_DIR$/src/main/resources/com/liming/core/web/wicket/border/NavomaticBorder.html,com/liming/core/web/wicket/HomePage.html=$MODULE_DIR$/src/main/resources/com/liming/core/web/wicket/HomePage.html,com/liming/core/web/wicket/panel/HeaderPanel.html=$MODULE_DIR$/src/main/resources/com/liming/core/web/wicket/panel/HeaderPanel.html,com/liming/core/web/wicket/panel/MenuPanel.html=$MODULE_DIR$/src/main/resources/com/liming/core/web/wicket/panel/MenuPanel.html,OSGI-INF/blueprint/context.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/context.xml" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>

@@ -19,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/modules/admin-itest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/admin-persist-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/admin-webapp-vaadin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/modules/admin-webapp-wicket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgitemplate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/poms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/poms/compiled" charset="UTF-8" />

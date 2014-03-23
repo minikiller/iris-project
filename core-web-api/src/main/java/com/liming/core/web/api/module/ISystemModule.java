@@ -7,15 +7,13 @@ package com.liming.core.web.api.module;
  * Time: 下午5:53
  * To change this template use File | Settings | File Templates.
  */
-public interface ISystemModule extends IModule  {
+public interface ISystemModule extends IModule {
 
 
     /**
      * 系统编号
+     *
      * @return
      */
     public String getNo();
-
-
-
 }

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/modules/admin-entities/com.liming.admin.entities.iml" filepath="$PROJECT_DIR$/modules/admin-entities/com.liming.admin.entities.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-persist-jpa/com.liming.admin.persist.jpa.iml" filepath="$PROJECT_DIR$/modules/admin-persist-jpa/com.liming.admin.persist.jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-webapp-vaadin/com.liming.admin.webapp.vaadin.iml" filepath="$PROJECT_DIR$/modules/admin-webapp-vaadin/com.liming.admin.webapp.vaadin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/admin-webapp-wicket/com.liming.admin.webapp.wicket.iml" filepath="$PROJECT_DIR$/modules/admin-webapp-wicket/com.liming.admin.webapp.wicket.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-api/com.liming.core.api.iml" filepath="$PROJECT_DIR$/core-api/com.liming.core.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-datasource/com.liming.core.datasource.iml" filepath="$PROJECT_DIR$/core-datasource/com.liming.core.datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-impl/com.liming.core.impl.iml" filepath="$PROJECT_DIR$/core-impl/com.liming.core.impl.iml" />

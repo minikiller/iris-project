@@ -7,8 +7,8 @@
         <setting name="compilerParameters" value="-compileReport" />
         <setting name="compilerMaxHeapSize" value="512" />
         <setting name="gwtScriptOutputStyle" value="OBF" />
-        <setting name="gwtSdkUrl" value="file://$MAVEN_REPOSITORY$/com/vaadin/vaadin-client/7.1.9" />
-        <setting name="gwtSdkType" value="Vaadin" />
+        <setting name="gwtSdkUrl" value="file://D:\maven\repository/com/vaadin/vaadin-client/7.1.9" />
+        <setting name="gwtSdkType" value="Vaadin-Maven" />
         <setting name="webFacet" value="Web" />
       </configuration>
     </facet>
@@ -25,6 +25,7 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.admin.webapp.vaadin-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.admin.webapp.vaadin" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Bundle-Description" value="Generated using Pax-Construct" />
           <property key="Embed-Dependency" value="*;scope=compile|runtime;artifactId=!org.osgi.core|org.osgi.compendium" />
           <property key="Embed-Directory" value="WEB-INF/lib" />
           <property key="Embed-Transitive" value="true" />

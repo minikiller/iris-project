@@ -2,14 +2,14 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.admin.webapp.wicket-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="${bundle.symbolicName}" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.admin.webapp.wicket-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.admin.webapp.wicket" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Bundle-Description" value="Generated using Pax-Construct" />
-          <property key="Export-Package" value="!${bundle.namespace}.internal.*,${bundle.namespace}.*;version=&quot;1.0-SNAPSHOT&quot;" />
-          <property key="Private-Package" value="${bundle.namespace}.internal.*" />
+          <property key="Bundle-Description" value="Admin - Webapp Wicket" />
+          <property key="Export-Package" value="!com.liming.admin.webapp.wicket.internal.*,com.liming.admin.webapp.wicket.*;version=&quot;1.0-SNAPSHOT&quot;" />
+          <property key="Private-Package" value="com.liming.admin.webapp.wicket.internal.*" />
           <property key="-include" value="-osgi.bnd" />
           <property key="Bundle-Name" value="Iris :: Admin - Wicket Web Application" />
-          <property key="Include-Resource" value="{blueprint/context.xml=$MODULE_DIR$/src/main/resources/blueprint/context.xml}" />
+          <property key="Include-Resource" value="{blueprint/context.xml=$MODULE_DIR$/src/main/resources/blueprint/context.xml},{com/liming/admin/webapp/wicket/page/UserPage.html=$MODULE_DIR$/src/main/resources/com/liming/admin/webapp/wicket/page/UserPage.html}" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>

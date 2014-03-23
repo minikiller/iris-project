@@ -4,6 +4,7 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.core.datasource-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.core.datasource" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
+          <property key="Bundle-Description" value="Iris Core DataSource" />
           <property key="Export-Package" value="!com.liming.core.datasource.internal.*,com.liming.core.datasource.*;version=&quot;1.0-SNAPSHOT&quot;" />
           <property key="Private-Package" value="com.liming.core.datasource.internal.*" />
           <property key="-include" value="-osgi.bnd" />

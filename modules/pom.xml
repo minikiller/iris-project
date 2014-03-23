@@ -24,6 +24,7 @@
         <module>admin-entities</module>
         <module>admin-persist-jpa</module>
         <module>admin-core</module>
+        <module>admin-webapp-wicket</module>
         <!--<module>admin-itest</module>-->
         <!--<module>admin-webapp-vaadin</module>-->
     </modules>

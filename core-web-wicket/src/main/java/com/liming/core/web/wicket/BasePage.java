@@ -10,9 +10,13 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 public class BasePage extends WebPage {
     private NavomaticBorder navomaticBorder;
 
+    public BasePage() {
+        this(new PageParameters());
+    }
+
     public BasePage(PageParameters parameters) {
         super(parameters);
-        navomaticBorder =new NavomaticBorder("iris");
+        navomaticBorder = new NavomaticBorder("iris");
         add(navomaticBorder);
     }
 }

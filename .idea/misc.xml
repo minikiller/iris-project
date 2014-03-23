@@ -24,6 +24,7 @@
     <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-persist-jpa" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-vaadin" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-webapp-vaadin" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-webapp-wicket" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/osgitemplate" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/pentaho-report-sdo/framework-bundle" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/platform-api" />

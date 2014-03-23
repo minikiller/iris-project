@@ -13,11 +13,15 @@
     <artifactId>com.liming.admin.webapp.wicket</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Iris :: Admin - Wicket Web Application</name>
+    <description>Admin - Webapp Wicket</description>
     <packaging>bundle</packaging>
 
     <properties>
+        <bundle.symbolicName>com.liming.admin.webapp.wicket</bundle.symbolicName>
+        <bundle.namespace>${bundle.symbolicName}</bundle.namespace>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.wicket</groupId>
