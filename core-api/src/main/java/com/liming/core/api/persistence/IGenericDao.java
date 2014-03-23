@@ -26,7 +26,7 @@ public interface IGenericDao<T, PK extends Serializable> extends IDaoService {
      *
      * @return List of populated objects
      */
-    List<T> getAllDistinct();
+    List<T> getAllDistinct(String className);
 
     /**
      * Gets all records that match a search term. "*" will get them all.
@@ -45,7 +45,7 @@ public interface IGenericDao<T, PK extends Serializable> extends IDaoService {
      * @param id the identifier (primary key) of the object to get
      * @return a populated object
      */
-    T get(PK id);
+    T get(String className,PK id);
 
     /**
      * Checks for existence of an object of type T using the id arg.

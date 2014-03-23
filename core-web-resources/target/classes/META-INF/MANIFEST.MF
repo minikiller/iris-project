@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1395571544729
+Build-Jdk: 1.7.0_03
+Built-By: dell
+Bundle-Activator: com.liming.core.web.resources.InitActivator
+Bundle-Description: Iris Core Web Resources
+Bundle-ManifestVersion: 2
+Bundle-Name: Iris :: Core - Web Resources
+Bundle-SymbolicName: com.liming.core.web.resources
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.liming.core.web.resources;version="1.0.0.SNAPSHOT";u
+ ses:="org.osgi.framework"
+Import-Package: org.apache.log4j;version="[1.2,2)",org.osgi.framework;ve
+ rsion="[1.6,2)",org.osgi.service.http;version="[1.2,2)"
+Tool: Bnd-2.1.0.20130426-122213

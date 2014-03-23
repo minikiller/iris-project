@@ -1,0 +1,13 @@
+<atlassian-ide-plugin>
+  <project-configuration>
+    <servers>
+      <jira>
+        <server-id>b9fb65e8-7def-4691-8550-a8816f41bf2a</server-id>
+        <name>Unnamed_1</name>
+        <url>http://10.133.77.138:8088</url>
+        <shared>false</shared>
+      </jira>
+    </servers>
+    <default-jira-server>b9fb65e8-7def-4691-8550-a8816f41bf2a</default-jira-server>
+  </project-configuration>
+</atlassian-ide-plugin>

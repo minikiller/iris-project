@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.osgi:services:3.1.200-v20070605">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/osgi/services/3.1.200-v20070605/services-3.1.200-v20070605.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/osgi/services/3.1.200-v20070605/services-3.1.200-v20070605-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/osgi/services/3.1.200-v20070605/services-3.1.200-v20070605-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

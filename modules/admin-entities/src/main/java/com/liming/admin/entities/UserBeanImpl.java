@@ -7,6 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
@@ -15,7 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "app_user")
 @Inheritance(strategy = InheritanceType.JOINED)
-
+@XmlRootElement
 public class UserBeanImpl extends PersistentEntity implements IUserBean {
 
     private String name;
@@ -39,5 +42,9 @@ public class UserBeanImpl extends PersistentEntity implements IUserBean {
     @Override
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public static void main(String[] args) throws Exception {
+
     }
 }

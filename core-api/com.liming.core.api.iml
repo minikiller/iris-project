@@ -4,7 +4,6 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="Manually" manifestLocation="-osgi.bnd" jarfileLocation="com.liming.core.api-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.liming.core.api" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="false" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Bundle-Description" value="Core API" />
           <property key="Export-Package" value="!com.liming.core.api.internal.*,com.liming.core.api.*;version=&quot;1.0-SNAPSHOT&quot;" />
           <property key="Private-Package" value="com.liming.core.api.internal.*" />
           <property key="-include" value="-osgi.bnd" />
@@ -13,9 +12,6 @@
         </additionalProperties>
         <additionalJARContents />
       </configuration>
-    </facet>
-    <facet type="osgiBundleFacet" name="OSGi Bundle">
-      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">

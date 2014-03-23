@@ -2,6 +2,7 @@ package com.liming.admin.persist.openjpa;
 
 import com.liming.admin.api.dao.IUserBeanDao;
 import com.liming.admin.api.persistence.IUserBean;
+import com.liming.admin.entities.UserBeanImpl;
 import com.liming.core.impl.persistence.GenericOpenJpaDao;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  * Created by dell on 14-1-16.
  */
 public class UserBeanDaoOpenjpa extends GenericOpenJpaDao<IUserBean, Long> implements IUserBeanDao {
-
+    private final String className=UserBeanImpl.class.getName();
     /**
      * Constructor that sets the entity to User.class.
      */
@@ -20,7 +21,8 @@ public class UserBeanDaoOpenjpa extends GenericOpenJpaDao<IUserBean, Long> imple
 
     @Override
     public List<IUserBean> getUserList() {
-        return null;
+
+        return super.getAll(className);
     }
 
     @Override
@@ -31,5 +33,10 @@ public class UserBeanDaoOpenjpa extends GenericOpenJpaDao<IUserBean, Long> imple
     @Override
     public void removeUser(Long userId) {
         super.remove(userId);
+    }
+
+    @Override
+    public IUserBean getUser(Long userId) {
+        return super.get(className,userId);
     }
 }

@@ -45,8 +45,10 @@ public class GenericOpenJpaDao<T extends IPersistentEntity, PK extends Serializa
     }
 
     @Override
-    public List<T> getAllDistinct() {
-        return null;
+    public List<T> getAllDistinct(String className) {
+        final Query query = entityManager.createQuery("select Distinct c from " + className + " c ");
+        final List<T> resultList = query.getResultList();
+        return resultList;
     }
 
     @Override
@@ -55,8 +57,14 @@ public class GenericOpenJpaDao<T extends IPersistentEntity, PK extends Serializa
     }
 
     @Override
-    public T get(PK id) {
-        return entityManager.find(persistentClass, id);
+    public T get(String className,PK id) {
+
+        try {
+            return (T)entityManager.find(Class.forName(className), id);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override

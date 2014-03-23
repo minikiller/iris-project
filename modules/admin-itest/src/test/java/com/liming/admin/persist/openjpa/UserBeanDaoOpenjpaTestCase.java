@@ -41,6 +41,8 @@ public class UserBeanDaoOpenjpaTestCase {
                 // Don't bother with local console output as it just ends up cluttering the logs
                 configureConsole().ignoreLocalConsole().startRemoteShell(),
                 logLevel(LogLevelOption.LogLevel.INFO),
+                //Change the OSGi framework to equinox.
+                editConfigurationFilePut( "etc/config.properties", "karaf.framework", "equinox"),
                 // Provision the example feature exercised by this test
                 features(
                         "mvn:com.liming.core/karaf-features/1.0/xml/features",

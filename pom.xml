@@ -50,7 +50,7 @@
         <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
         <!---->
-        <karaf.path>D:/myJavaTools/apache-karaf-3.0.0/deploy</karaf.path>
+        <karaf.path>D:/myJavaTools/new/apache-karaf-3.0.0/deploy</karaf.path>
         <version.apache.karaf>3.0.0</version.apache.karaf>
     </properties>
 
@@ -64,6 +64,11 @@
         <module>core-impl</module>
         <module>core-datasource</module>
         <module>karaf-features</module>
+        <module>core-couchdb</module>
+        <module>core-web-resources</module>
+        <module>core-web-api</module>
+        <module>core-web-wicket</module>
+        <module>core-util</module>
         <!--<module>osgitemplate</module>-->
 
     </modules>
@@ -73,7 +78,6 @@
             <plugin>
                 <groupId>org.ops4j</groupId>
                 <artifactId>maven-pax-plugin</artifactId>
-
                 <configuration>
                     <!--
                      | some example Pax-Runner settings
@@ -121,9 +125,22 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>${maven-deploy-plugin.version}</version>
             </plugin>
-
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+            </plugin>
+        </plugins>
+    </reporting>
     <repositories>
         <repository>
             <id>jboss-public-repository-group</id>

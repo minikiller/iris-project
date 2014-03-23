@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <service interface="org.ops4j.pax.wicket.api.WebApplicationFactory" >
+        <service-properties>
+            <entry key="pax.wicket.applicationname" value="blueprint.simple.default" />
+            <entry key="pax.wicket.mountpoint" value="/" />
+        </service-properties>
+        <bean class="org.ops4j.pax.wicket.api.support.SimpleWebApplicationFactory" >
+            <property name="wicketApplication" value="com.liming.core.web.wicket.IrisApplication" />
+        </bean>
+    </service>
+</blueprint>

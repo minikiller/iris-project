@@ -27,17 +27,21 @@
         <module name="com.liming.admin.api" />
         <module name="com.liming.admin.core" />
         <module name="com.liming.admin.entities" />
-        <module name="com.liming.admin.itest" />
         <module name="com.liming.admin.persist.jpa" />
         <module name="com.liming.admin.webapp.vaadin" />
         <module name="com.liming.core.api" />
         <module name="com.liming.core.datasource" />
         <module name="com.liming.core.impl" />
+        <module name="com.liming.core.util" />
+        <module name="com.liming.core.web.api" />
+        <module name="com.liming.core.web.resources" />
         <module name="com.liming.platform.admin.api" />
         <module name="com.liming.platform.admin.core" />
         <module name="com.liming.platform.admin.entities" />
         <module name="com.liming.platform.admin.persist.jpa" />
         <module name="com.liming.platform.core.impl" />
+        <module name="com.liming.platform.couchdb" />
+        <module name="com.liming.platform.template" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,6 +55,10 @@
       <module name="com.liming.core.api" target="1.6" />
       <module name="com.liming.core.datasource" target="1.6" />
       <module name="com.liming.core.impl" target="1.6" />
+      <module name="com.liming.core.resources" target="1.6" />
+      <module name="com.liming.core.util" target="1.6" />
+      <module name="com.liming.core.web.api" target="1.6" />
+      <module name="com.liming.core.web.resources" target="1.6" />
       <module name="com.liming.platform.admin.api" target="1.7" />
       <module name="com.liming.platform.admin.core" target="1.7" />
       <module name="com.liming.platform.admin.datasource" target="1.7" />
@@ -60,7 +68,8 @@
       <module name="com.liming.platform.api" target="1.7" />
       <module name="com.liming.platform.core" target="1.7" />
       <module name="com.liming.platform.core.impl" target="1.7" />
-      <module name="com.liming.platform.template" target="1.7" />
+      <module name="com.liming.platform.couchdb" target="1.6" />
+      <module name="com.liming.platform.template" target="1.6" />
       <module name="compiled-bundle-settings" target="1.6" />
       <module name="framework-bundle" target="1.6" />
       <module name="iris-project" target="1.6" />

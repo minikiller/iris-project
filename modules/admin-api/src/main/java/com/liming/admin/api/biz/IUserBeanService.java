@@ -10,6 +10,5 @@ import java.util.List;
  */
 public interface IUserBeanService extends IBizService {
     public IUserBean addUser(IUserBean user);
-
     public List<IUserBean> getAllUser();
 }

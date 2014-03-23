@@ -5,18 +5,20 @@
       <module fileurl="file://$PROJECT_DIR$/modules/admin-api/com.liming.admin.api.iml" filepath="$PROJECT_DIR$/modules/admin-api/com.liming.admin.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-core/com.liming.admin.core.iml" filepath="$PROJECT_DIR$/modules/admin-core/com.liming.admin.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-entities/com.liming.admin.entities.iml" filepath="$PROJECT_DIR$/modules/admin-entities/com.liming.admin.entities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/admin-itest/com.liming.admin.itest.iml" filepath="$PROJECT_DIR$/modules/admin-itest/com.liming.admin.itest.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-persist-jpa/com.liming.admin.persist.jpa.iml" filepath="$PROJECT_DIR$/modules/admin-persist-jpa/com.liming.admin.persist.jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/admin-webapp-vaadin/com.liming.admin.webapp.vaadin.iml" filepath="$PROJECT_DIR$/modules/admin-webapp-vaadin/com.liming.admin.webapp.vaadin.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-api/com.liming.core.api.iml" filepath="$PROJECT_DIR$/core-api/com.liming.core.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-datasource/com.liming.core.datasource.iml" filepath="$PROJECT_DIR$/core-datasource/com.liming.core.datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-impl/com.liming.core.impl.iml" filepath="$PROJECT_DIR$/core-impl/com.liming.core.impl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/admin-api/com.liming.platform.admin.api.iml" filepath="$PROJECT_DIR$/modules/admin-api/com.liming.platform.admin.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-util/com.liming.core.util.iml" filepath="$PROJECT_DIR$/core-util/com.liming.core.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-web-api/com.liming.core.web.api.iml" filepath="$PROJECT_DIR$/core-web-api/com.liming.core.web.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-web-resources/com.liming.core.web.resources.iml" filepath="$PROJECT_DIR$/core-web-resources/com.liming.core.web.resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-couchdb/com.liming.platform.couchdb.iml" filepath="$PROJECT_DIR$/core-couchdb/com.liming.platform.couchdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-web-wicket/com.liming.platform.template.iml" filepath="$PROJECT_DIR$/core-web-wicket/com.liming.platform.template.iml" />
       <module fileurl="file://$PROJECT_DIR$/poms/compiled/compiled-bundle-settings.iml" filepath="$PROJECT_DIR$/poms/compiled/compiled-bundle-settings.iml" />
       <module fileurl="file://$PROJECT_DIR$/iris-project.iml" filepath="$PROJECT_DIR$/iris-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/karaf-features/karaf-features.iml" filepath="$PROJECT_DIR$/karaf-features/karaf-features.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/modules.iml" filepath="$PROJECT_DIR$/modules/modules.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pentaho-report-sdo/modules.iml" filepath="$PROJECT_DIR$/pentaho-report-sdo/modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/provision/provision.iml" filepath="$PROJECT_DIR$/provision/provision.iml" />
       <module fileurl="file://$PROJECT_DIR$/poms/shared-plugin-settings.iml" filepath="$PROJECT_DIR$/poms/shared-plugin-settings.iml" />
       <module fileurl="file://$PROJECT_DIR$/poms/wrappers/wrapper-bundle-settings.iml" filepath="$PROJECT_DIR$/poms/wrappers/wrapper-bundle-settings.iml" />

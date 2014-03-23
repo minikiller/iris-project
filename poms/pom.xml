@@ -35,6 +35,15 @@
         <commonsPool.Version>1.5.4</commonsPool.Version>
         <serp.Version>1.13.1</serp.Version>
         <log4j.version>1.2.17</log4j.version>
+        <!--apache wicket start-->
+        <wicket.version>6.7.0</wicket.version>
+        <pax.wicket.version>3.0.1</pax.wicket.version>
+        <geronimo.inject.version>1.0</geronimo.inject.version>
+        <ops4j.base.version>1.4.0</ops4j.base.version>
+        <cglib.version>2.2.2_1</cglib.version>
+        <aopalliance.version>1.0_6</aopalliance.version>
+        <cglib.range>[2,3)</cglib.range>
+        <!--apache wicket end-->
     </properties>
     <build>
         <pluginManagement>
@@ -157,6 +166,30 @@
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>com.liming.core</groupId>
+                <artifactId>com.liming.core.web.api</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liming.core</groupId>
+                <artifactId>com.liming.core.web.wicket</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liming.core</groupId>
+                <artifactId>com.liming.core.web.resources</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.liming.core</groupId>
+                <artifactId>com.liming.core.util</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
             <!--Iris Core end-->
             <!--openjpa begin-->
             <dependency>
@@ -214,6 +247,96 @@
                 <version>${log4j.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>org.eclipse.osgi</groupId>
+                <artifactId>services</artifactId>
+                <version>3.1.200-v20070605</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>org.eclipse.osgi</artifactId>
+                <version>3.7.0.v20110613</version>
+                <scope>provided</scope>
+            </dependency>
+<!--wicket begin-->
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-core</artifactId>
+                <version>${wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-request</artifactId>
+                <version>${wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-util</artifactId>
+                <version>${wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-auth-roles</artifactId>
+                <version>${wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-extensions</artifactId>
+                <version>${wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.ops4j.pax.wicket</groupId>
+                <artifactId>org.ops4j.pax.wicket.service</artifactId>
+                <version>${pax.wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ops4j.base</groupId>
+                <artifactId>ops4j-base</artifactId>
+                <version>${ops4j.base.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.geronimo.specs</groupId>
+                <artifactId>geronimo-atinject_1.0_spec</artifactId>
+                <version>${geronimo.inject.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.cglib</artifactId>
+                <version>${cglib.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.aopalliance</artifactId>
+                <version>${aopalliance.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ops4j.pax.wicket.spi</groupId>
+                <artifactId>org.ops4j.pax.wicket.spi.blueprint</artifactId>
+                <version>${pax.wicket.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!--wicket end -->
         </dependencies>
     </dependencyManagement>
 

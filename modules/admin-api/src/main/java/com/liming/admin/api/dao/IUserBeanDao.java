@@ -31,4 +31,6 @@ public interface IUserBeanDao extends IGenericDao<IUserBean, Long> {
      * @param userId 用户ID
      */
     void removeUser(Long userId);
+
+    IUserBean getUser(Long userId);
 }

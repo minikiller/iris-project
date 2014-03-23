@@ -7,8 +7,14 @@
     <file type="gwt" url="file://$PROJECT_DIR$/modules/admin-vaadin" />
     <file type="gwt" url="file://$PROJECT_DIR$/modules/admin-webapp-vaadin" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/core-api" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/core-couchdb" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/core-datasource" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/core-impl" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/core-resources" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/core-util" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/core-web-api" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/core-web-resources" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/core-web-wicket" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-api" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-bundle" />
     <file type="Osmorc" url="file://$PROJECT_DIR$/modules/admin-core" />
@@ -37,6 +43,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/modules/admin-api/pom.xml" />
         <option value="$PROJECT_DIR$/modules/admin-webapp-vaadin/pom.xml" />
+        <option value="$PROJECT_DIR$/core-web-resources/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,0 +1,6 @@
+com\liming\admin\api\internal\ExampleActivator.class
+com\liming\admin\api\biz\IUserBeanService.class
+com\liming\admin\api\internal\ExampleServiceImpl.class
+com\liming\admin\api\persistence\IUserBean.class
+com\liming\admin\api\ExampleService.class
+com\liming\admin\api\dao\IUserBeanDao.class

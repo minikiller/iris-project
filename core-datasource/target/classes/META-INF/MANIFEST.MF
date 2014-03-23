@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1395571533046
+Build-Jdk: 1.7.0_03
+Built-By: dell
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Iris Core DataSource
+Bundle-ManifestVersion: 2
+Bundle-Name: Iris :: Core - DataSource
+Bundle-SymbolicName: com.liming.core.datasource
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: javax.sql.DataSource;osgi.jndi.service.name="jdbc/NoTxTr
+ adeDataSource",javax.sql.DataSource;osgi.jndi.service.name="jdbc/mysqld
+ s",javax.sql.XADataSource;osgi.jndi.service.name="jdbc/TradeDataSource"
+Import-Package: com.mysql.jdbc.jdbc2.optional,javax.sql,org.apache.derby
+ .jdbc,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213

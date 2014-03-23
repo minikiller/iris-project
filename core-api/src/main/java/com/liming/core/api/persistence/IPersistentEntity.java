@@ -7,6 +7,7 @@ import java.util.Date;
 /**
  * 持久化实体接口
  */
+
 public interface IPersistentEntity extends IEntity {
     long getId();
 

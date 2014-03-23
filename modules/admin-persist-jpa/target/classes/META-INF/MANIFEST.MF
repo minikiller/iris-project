@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1395571526259
+Build-Jdk: 1.7.0_03
+Built-By: dell
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Iris Admin Persist JPA Container Managed Module
+Bundle-ManifestVersion: 2
+Bundle-Name: Iris :: Admin - Persist JPA Container Managed
+Bundle-SymbolicName: com.liming.admin.persist.openjpa
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.liming.admin.persist.openjpa;version="1.0.0.SNAPSHOT
+ ";uses:="com.liming.admin.api.dao,com.liming.admin.api.persistence,com.
+ liming.core.impl.persistence"
+Export-Service: com.liming.admin.api.dao.IUserBeanDao
+Import-Package: com.liming.admin.api.dao;version="[1.0,2)",com.liming.ad
+ min.api.persistence;version="[1.0,2)",com.liming.admin.entities;version
+ ="[1.0,2)",com.liming.core.api.persistence;version="[1.0,2)",com.liming
+ .core.impl.persistence;version="[1.0,2)",org.osgi.service.blueprint;ver
+ sion="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213
